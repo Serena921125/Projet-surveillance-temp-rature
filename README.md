@@ -34,7 +34,7 @@ Dans ce projet, nous allons concevoir un système de surveillance de températur
 
 ### I. Installation du Raspberry-Pi et de l'ESP32
 
-Tout d'abord, nous avons procédé au montage du capteur de température LM35 et de la carte ESP32 sur une plaque de prototypage, tout en étant vigilants sur les branchements. Les documents ci-dessous montrent comment lier le capteur à la carte :
+Tout d'abord, nous avons procédé au montage du capteur de température LM35 et de la carte ESP32 sur une plaque de prototypage, tout en étant vigilants sur les branchements. Les documents ci-dessous montrent comment lier le capteur à la carte. Nous obtenons le montage ci-dessous :
 
 
 
@@ -42,21 +42,11 @@ Tout d'abord, nous avons procédé au montage du capteur de température LM35 et
 
 
 
-
-
-Nous obtenons le montage ci-dessous :
-
-
-
-## PHOTO
-
-
-
 Nous avons aussi relié le Raspberry-Pi à l'ordinateur comme ceci :
 
 
 
-## PHOTO
+![Photo2](Raspberry.jpg)
 
 
 
@@ -86,7 +76,7 @@ Ensuite, on s'occupe du Raspberry-Pi avec la mise en place du MQTT et du Mosquit
 
 
 
-Puisqu'on ne parvient pas à se connecter sur mosquitto, on va alors se connecter sur "centreia.fr" qui est un équivalent. 
+Puisqu'on ne parvient pas à se connecter sur mosquitto, on va alors se connecter sur "centreia.fr" qui est un équivalent.
 
 
 
