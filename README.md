@@ -4,7 +4,7 @@ Chevrier Séréna
 
 MP3D
 
-# &nbsp;			Projet suivi température
+#  			Projet suivi température
 
 
 
@@ -32,7 +32,29 @@ Dans ce projet, nous allons concevoir un système de surveillance de températur
 
 
 
-### I. Installation du Raspberry-Pi et de l'ESP32 
+### I. Installation du Raspberry-Pi et de l'ESP32
+
+Tout d'abord, nous avons procédé au montage du capteur de température LM35 et de la carte ESP32 sur une plaque de prototypage, tout en étant vigilants sur les branchements. Les documents ci-dessous montrent comment lier le capteur à la carte :
+
+
+
+## CAPTURE
+
+
+
+Nous obtenons le montage ci-dessous :
+
+
+
+## PHOTO
+
+
+
+Nous avons aussi relié le Raspberry-Pi à l'ordinateur comme ceci :
+
+
+
+## PHOTO
 
 
 
