@@ -38,7 +38,7 @@ Tout d'abord, nous avons procédé au montage du capteur de température LM35 et
 
 
 
-!\[Photo](Montage LM35 et ESP32.jpg)
+![Photo](Montage LM35 et ESP32.jpg)
 
 
 
