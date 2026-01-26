@@ -189,7 +189,7 @@ Après avoir connecté le Raspberry e la carte Arduino sur un serveur commun, no
 
 
 
-![Photo4](installationodered.jpg)
+!\[Photo4](installationodered.jpg)
 
 
 
@@ -210,14 +210,22 @@ Ensuite, le bloc vert est utilisé en tant que sortie. Enfin les blocs bleus rep
 ![Photo8](jaugedetail.jpg)
 ![Photo9](graphdetail.jpg)
 
-Il faut bien sûr faire attention à mettre les 2 blocs bleus dans le même "Group" comme par exemple ici avec: "[Home]temperature". 
+Il faut bien sûr faire attention à mettre les 2 blocs bleus dans le même "Group" comme par exemple ici avec: "[Home]temperature".
 Ensuite, on déploie l'ensemble des blocs et on obtient une donnée de température toutes les 10 secondes sur l'interface grâce au bloc violet d'entrée et au bloc vert de sortie :
 
 ![Photo10](donnees.jpg)
 
-En allant ensuite dans un nouvel onglet à l'aide de cette adresse: "http://<hostname>:1880" où le "hostname" est l'adresse IP qu'on peut retrouver en laissant notre souris sur l'icône du Wi-Fi ou en tapant cette commande sur le terminal: "hostname -I". Cet onglet montre les données de températures obtenues soous forme de jauge et sous forme de graphique:
+En allant ensuite dans un nouvel onglet à l'aide de cette adresse: "http://<hostname>:1880" où le "hostname" est l'adresse IP qu'on peut retrouver en laissant notre souris sur l'icône du Wi-Fi ou en tapant cette commande sur le terminal: "hostname -I". Cet onglet montre les données de températures obtenues sous forme de jauge et sous forme de graphique:
 
 ![Photo11](Graphiques.jpg)
+
+
+
+### IV. Stockage et exploitation des données
+
+L'objectif dans cette partie est que maintenant qu'on a les données, on va les enregistrer dans une base SQLite sur le Raspberry Pi et on va mettre en place une structure de base de données plus optimisée de type historique. Pour mettre en place tout ceci, nous allons tout d'abord installer "sqlite3" dans le Raspberry-Pi à l'aide de la commande: "sudo apt install sqlite3". Ensuite, on relie sqlite3 au data du SQLite crée sur Node-Red qui s'appelle ici: "/tmp/sqlite". Tout ceci est illustré dans la capture ci-dessous:
+
+![Photo12](sqlite1.jpg)
 
 
 
