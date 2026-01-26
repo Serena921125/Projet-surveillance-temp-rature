@@ -50,13 +50,17 @@ Nous avons aussi relié le Raspberry-Pi à l'ordinateur comme ceci :
 
 
 
+Les deux câbles USB sont reliés au clavier et à la souris de l'ordinateur. Le câble HDMI est relié au PC directement, il correspond à un autre port de connexion pour l'écran. Enfin, le dernier câble correspond à l'alimentation du Raspberry.
+
+
+
 ### II. Acquisition et transmission des données
 
 L'objectif dans cette partie est d'acquérir les données de température du capteur LM35 et les transmettre sur Node-red via MQTT et la connexion Wi-Fi. Le schéma explicatif se présente comme ci-dessous :
 
 
+![Photo3](Schema%20projet.png)
 
-#### CAPTURE SCHEMA
 
 #### 
 
