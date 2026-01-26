@@ -197,7 +197,13 @@ Après l'avoir installé, on l'active à l'aide des commandes: "sudo systemctl e
 
 ![Photo5](Nodered1.jpg)
 
+Le bloc violet nommé "serena-mikail" correspond aux données de températures du capteur LM35 au centreia. En effet, si on reprend le schéma de l'architecture du projet, les données de température acquises par la capteur sont transmises au serveur MQTT centreia.fr. On peut récupérer ces données en configurant bien le bloc comme ci-dessous:
 
+![Photo6](entreedetail1.jpg)
+
+En allant plus dans les détails, dans les paramètres plus avancés :
+
+![Photo7](entreedetail2.jpg)
 
 
 
