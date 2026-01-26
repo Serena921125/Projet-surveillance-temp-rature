@@ -223,11 +223,13 @@ En allant ensuite dans un nouvel onglet à l'aide de cette adresse: "http://<hos
 
 ### IV. Stockage et exploitation des données
 
-L'objectif dans cette partie est que maintenant qu'on a les données, on va les enregistrer dans une base SQLite sur le Raspberry Pi et on va mettre en place une structure de base de données plus optimisée de type historique. Pour mettre en place tout ceci, nous allons tout d'abord installer "sqlite3" dans le Raspberry-Pi à l'aide de la commande: "sudo apt install sqlite3". Ensuite, on relie sqlite3 au data du SQLite crée sur Node-Red qui s'appelle ici: "/tmp/sqlite". Tout ceci est illustré dans la capture ci-dessous:
+L'objectif dans cette partie est que maintenant qu'on a les données, on va les enregistrer dans une base SQLite sur le Raspberry Pi et on va mettre en place une structure de base de données plus optimisée de type historique. Pour mettre en place tout ceci, nous allons tout d'abord installer "sqlite3" dans le Raspberry-Pi à l'aide de la commande: "sudo apt install sqlite3". Ensuite, on relie sqlite3 au database du SQLite crée sur Node-Red qui s'appelle ici: "/tmp/sqlite". Tout ceci est illustré dans la capture ci-dessous:
 
 ![Photo12](sqlite1.jpg)
 
+Sur Node-Red, on reprend le même schéma blocs, mais, on ajoute le bloc "fonction" et le bloc "SQLite" comme ci-dessous:
 
+![Photo13](nodered2.jpg)
 
 ##### 
 
