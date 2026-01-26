@@ -58,6 +58,8 @@ Nous avons aussi relié le Raspberry-Pi à l'ordinateur comme ceci :
 
 
 
+aldo
+
 
 
 
