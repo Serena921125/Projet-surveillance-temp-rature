@@ -227,9 +227,16 @@ L'objectif dans cette partie est que maintenant qu'on a les données, on va les 
 
 ![Photo12](sqlite1.jpg)
 
+Ensuite, on crée une table de mesures qu'on appelle "mesures2" qui va faire office d'historiques avec 1 colonne date et heure et une colonne température relevée. 
 Sur Node-Red, on reprend le même schéma blocs, mais, on ajoute le bloc "fonction" et le bloc "SQLite" comme ci-dessous:
 
 ![Photo13](nodered2.jpg)
+
+Le bloc "fonction" va permettre de définir le "msg.topic" qui est dans le bloc "SQLite". Les configurations de ces 2 blocs respectivement sont :
+
+![Photo14](fonctiondetail.jpg)
+
+![Photo15](sqlitedetail.jpg)
 
 ##### 
 
