@@ -210,6 +210,11 @@ Ensuite, le bloc vert est utilisé en tant que sortie. Enfin les blocs bleus rep
 ![Photo8](jaugedetail.jpg)
 ![Photo9](graphdetail.jpg)
 
+Il faut bien sûr faire attention à mettre les 2 blocs bleus dans le même "Group" comme par exemple ici avec: "[Home]temperature". 
+Ensuite, on déploie l'ensemble des blocs et on obtient une donnée de température toutes les 10 secondes sur l'interface grâce au bloc violet d'entrée et au bloc vert de sortie :
+
+![Photo10](donnees.jpg)
+
 
 
 ##### 
