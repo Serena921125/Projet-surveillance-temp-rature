@@ -205,6 +205,11 @@ En allant plus dans les détails, dans les paramètres plus avancés :
 
 ![Photo7](entreedetail2.jpg)
 
+Ensuite, le bloc vert est utilisé en tant que sortie. Enfin les blocs bleus représentent les sorties en tant que graphiques. Le "gauge" correspond à une jauge et "chart" correspond à un graphique avec un axe X (heure) et un axe Y (température relevée). On configure les 2 blocs bleus aussi comme ci-dessous :
+
+![Photo8](jaugedetail.jpg)
+![Photo9](graphdetail.jpg)
+
 
 
 ##### 
