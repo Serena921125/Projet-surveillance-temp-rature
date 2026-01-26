@@ -38,7 +38,7 @@ Tout d'abord, nous avons procédé au montage du capteur de température LM35 et
 
 
 
-![Photo](Montage LM35 et ESP32.jpg)
+![Photo](Montage%20LM35%20et%20ESP32.jpg)
 
 
 
@@ -86,7 +86,7 @@ Ensuite, on s'occupe du Raspberry-Pi avec la mise en place du MQTT et du Mosquit
 
 
 
-Puisqu'on ne parvient pas à se connecter sur mosquitto, on va alors se connecter sur "centreia.fr". 
+Puisqu'on ne parvient pas à se connecter sur mosquitto, on va alors se connecter sur "centreia.fr" qui est un équivalent. 
 
 
 
