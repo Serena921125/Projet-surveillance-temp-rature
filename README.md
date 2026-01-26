@@ -215,6 +215,10 @@ Ensuite, on déploie l'ensemble des blocs et on obtient une donnée de températ
 
 ![Photo10](donnees.jpg)
 
+En allant ensuite dans un nouvel onglet à l'aide de cette adresse: "http://<hostname>:1880" où le "hostname" est l'adresse IP qu'on peut retrouver en laissant notre souris sur l'icône du Wi-Fi ou en tapant cette commande sur le terminal: "hostname -I". Cet onglet montre les données de températures obtenues soous forme de jauge et sous forme de graphique:
+
+![Photo11](Graphiques.jpg)
+
 
 
 ##### 
