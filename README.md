@@ -26,7 +26,7 @@ MP3D
 
 
 
-## Introduction :
+### Introduction :
 
 Dans ce projet, nous allons concevoir un système de surveillance de température en utilisant un capteur LM35, une carte ESP32, un Raspberry Pi ainsi que le protocole MQTT. Le but principalement sera de transmettre les données du capteur de température au Raspberry Pi via Mosquitto et le réseau Wi-Fi, les stocker dans une base de données SQLite et les afficher en temps réel à l'aide du Node-Red.
 
@@ -237,6 +237,11 @@ Le bloc "fonction" va permettre de définir le "msg.topic" qui est dans le bloc 
 ![Photo14](fonctiondetail.jpg)
 
 ![Photo15](sqlitedetail.jpg)
+
+On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pour obtenir cette dernière, on tape la commande suivante: "SELECT * from mesures2;". L'image qui suit montre qu'on obtient les données sur la Raspberry de manière plus organisée, soit en format historique:
+
+![Photo15](tablemesures.jpg)
+
 
 ##### 
 
