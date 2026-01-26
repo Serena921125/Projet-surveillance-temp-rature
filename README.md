@@ -242,6 +242,8 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 
 ![Photo15](tablemesures.jpg)
 
+#### V. Sécurisation et Fiabilité
+
 
 ##### 
 
