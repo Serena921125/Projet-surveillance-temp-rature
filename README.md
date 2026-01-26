@@ -68,7 +68,7 @@ La première étape est d'acquérir les données de température du capteur LM35
 
 
 
-#include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi) 
+***#include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi) 
 #include <PubSubClient.h> // Connect and publish to the MQTT broker 
  
 // WiFi 
@@ -162,7 +162,7 @@ void loop() {
  
   client.disconnect();  // disconnect from the MQTT broker 
   delay(1000*10);       // print new values every 10 seconds 
-}
+}***
 
 
 Ce programme permet aussi de connecter la carte Arduino au réseau Wi-Fi (LoraChoco). Nous utilisons ce Wi-Fi et pas un autre car c'est celui qui est le plus fiable pour notre projet et qui ne sature pas facilement.
