@@ -125,7 +125,7 @@ delay(500);
 Serial.print(".");
 }
 
-&nbsp;   // Debugging - Output the IP Address of the ESP32 
+    // Debugging - Output the IP Address of the ESP32
 
 Serial.println("WiFi connected");
 Serial.print("IP address: ");
@@ -175,15 +175,27 @@ Ensuite, on s'occupe du Raspberry-Pi avec la mise en place du MQTT et du Mosquit
 
 
 
-![Photo4](captureerreur.jpg)
+!\[Photo4](captureerreur.jpg)
 
 
 
 Puisqu'on ne parvient pas à se connecter sur mosquitto, on va alors se connecter sur "centreia.fr" qui est un équivalent.
 
-Nous allons ensuite utiliser Node-Red qui sera notre interface pour la visualisation des données transmises par le capteur LM35 et la carte ESP32. Tout d'abord, on l'active sur Raspberry pour qu'on puisse y accéder :
+
+
+### III. Affichage et interface utilisateur
+
+Après avoir connecté le Raspberry e la carte Arduino sur un serveur commun, nous allons ensuite utiliser Node-Red qui sera notre interface pour la visualisation des données transmises par le capteur LM35 et la carte ESP32. Tout d'abord, on l'installe sur Raspberry pour qu'on puisse y accéder :
+
+
 
 ![Photo4](installationodered.jpg)
+
+
+
+Après l'avoir installé, on l'active à l'aide des commandes: "sudo systemctl enable nodered.service" et "node-red-pi --max-old-space-size=256", puis, on l'ouvre dans le navigateur en tapant cette adresse: "http://localhost:1880". Dans un premier temps, nous effectuons le schéma de blocs ci-dessous :
+
+![Photo5](Nodered1.jpg)
 
 
 
