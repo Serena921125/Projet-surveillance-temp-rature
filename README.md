@@ -24,5 +24,21 @@ MP3D
 
 ##### VI. Alertes et Automatisation
 
+
+
+## Introduction :
+
+Dans ce projet, nous allons concevoir un système de surveillance de température en utilisant un capteur LM35, une carte ESP32, un Raspberry Pi ainsi que le protocole MQTT. Le but principalement sera de transmettre les données du capteur de température au Raspberry Pi via Mosquitto et le réseau Wi-Fi, les stocker dans une base de données SQLite et les afficher en temps réel à l'aide du Node-Red.
+
+
+
+### I. Installation du Raspberry-Pi et de l'ESP32 
+
+
+
+
+
+
+
 ##### 
 
