@@ -38,7 +38,7 @@ Tout d'abord, nous avons procédé au montage du capteur de température LM35 et
 
 
 
-!\[Photo](Montage%20LM35%20et%20ESP32.jpg)
+![Photo](Montage%20LM35%20et%20ESP32.jpg)
 
 
 
@@ -46,7 +46,7 @@ Nous avons aussi relié le Raspberry-Pi à l'ordinateur comme ceci :
 
 
 
-!\[Photo2](Raspberry.jpg)
+![Photo2](Raspberry.jpg)
 
 
 
@@ -60,7 +60,7 @@ L'objectif dans cette partie est d'acquérir les données de température du cap
 
 
 
-!\[Photo3](Schema%20projet.png)
+![Photo3](Schema%20projet.png)
 
 
 
@@ -175,7 +175,7 @@ Ensuite, on s'occupe du Raspberry-Pi avec la mise en place du MQTT et du Mosquit
 
 
 
-!\[Photo4](captureerreur.jpg)
+![Photo4](captureerreur.jpg)
 
 
 
