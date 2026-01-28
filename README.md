@@ -8,29 +8,29 @@ MP3D
 
 
 
-## Sommaire :
+## <ins>Sommaire :</ins>
 
-##### Introduction
+##### <ins>Introduction</ins>
 
-##### I. Installation du Raspberry-Pi et de l'ESP32
+##### <ins>I. Installation du Raspberry-Pi et de l'ESP32</ins>
 
-##### II. Acquisition et transmission des données
+##### <ins>II. Acquisition et transmission des données</ins>
 
-##### III. Affichage et interface utilisateur
+##### <ins>III. Affichage et interface utilisateur</ins>
 
-##### IV. Stockage et exploitation des données
+##### <ins>IV. Stockage et exploitation des données</ins>
 
-##### V. Alertes et Automatisation
+##### <ins>V. Alertes et Automatisation</ins>
 
 
 
-### Introduction :
+### <ins>Introduction :</ins>
 
 Dans ce projet, nous allons concevoir un système de surveillance de température en utilisant un capteur LM35, une carte ESP32, un Raspberry Pi ainsi que le protocole MQTT. Le but principalement sera de transmettre les données du capteur de température au Raspberry Pi via Mosquitto et le réseau Wi-Fi, les stocker dans une base de données SQLite et les afficher en temps réel à l'aide du Node-Red.
 
 
 
-### I. Installation du Raspberry-Pi et de l'ESP32
+### <ins>I. Installation du Raspberry-Pi et de l'ESP32</ins>
 
 Tout d'abord, nous avons procédé au montage du capteur de température LM35 et de la carte ESP32 sur une plaque de prototypage, tout en étant vigilants sur les branchements. Les documents ci-dessous montrent comment lier le capteur à la carte. Nous obtenons le montage ci-dessous :
 
@@ -52,7 +52,7 @@ Les deux câbles USB sont reliés au clavier et à la souris de l'ordinateur. Le
 
 
 
-### II. Acquisition et transmission des données
+### <ins>II. Acquisition et transmission des données</ins>
 
 L'objectif dans cette partie est d'acquérir les données de température du capteur LM35 et les transmettre sur Node-red via MQTT et la connexion Wi-Fi. Le schéma explicatif se présente comme ci-dessous :
 
@@ -181,7 +181,7 @@ Puisqu'on ne parvient pas à se connecter sur mosquitto, on va alors se connecte
 
 
 
-### III. Affichage et interface utilisateur
+### <ins>III. Affichage et interface utilisateur</ins>
 
 Après avoir connecté le Raspberry e la carte Arduino sur un serveur commun, nous allons ensuite utiliser Node-Red qui sera notre interface pour la visualisation des données transmises par le capteur LM35 et la carte ESP32. Tout d'abord, on l'installe sur Raspberry pour qu'on puisse y accéder :
 
@@ -219,7 +219,7 @@ En allant ensuite dans un nouvel onglet à l'aide de cette adresse: "http://<hos
 
 
 
-### IV. Stockage et exploitation des données
+### <ins>IV. Stockage et exploitation des données</ins>
 
 L'objectif dans cette partie est que maintenant qu'on a les données, on va les enregistrer dans une base SQLite sur le Raspberry Pi et on va mettre en place une structure de base de données plus optimisée de type historique. Pour mettre en place tout ceci, nous allons tout d'abord installer "sqlite3" dans le Raspberry-Pi à l'aide de la commande: "sudo apt install sqlite3". Ensuite, on relie sqlite3 au database du SQLite crée sur Node-Red qui s'appelle ici: "/tmp/sqlite". Tout ceci est illustré dans la capture ci-dessous:
 
@@ -240,7 +240,7 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 
 ![Photo15](tablemesures.jpg)
 
-#### V. Alertes et automatisation
+#### <ins>V. Alertes et automatisation</ins>
 
 Le but dans cette partie est de mettre en place un système d'alerte sous forme de message et de LED lorsque la température dépasse un seuil que nous allons définir. Nous faisons le choix d'envoyer des messages d'alerte dans un serveur discord et de fixer le seuil de température à 14°C. Pour cela, nous rédigeons un programme Arduino qui permet d'effectuer ce qui est demandé :
 
