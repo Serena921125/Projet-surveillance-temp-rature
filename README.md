@@ -240,7 +240,7 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 
 ![Photo15](tablemesures.jpg)
 
-#### <ins>V. Alertes et automatisation</ins>
+### <ins>V. Alertes et automatisation</ins>
 
 Le but dans cette partie est de mettre en place un système d'alerte sous forme de message et de LED lorsque la température dépasse un seuil que nous allons définir. Nous faisons le choix d'envoyer des messages d'alerte dans un serveur discord et de fixer le seuil de température à 14°C. Pour cela, nous rédigeons un programme Arduino qui permet d'effectuer ce qui est demandé :
 
