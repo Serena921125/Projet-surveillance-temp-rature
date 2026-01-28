@@ -248,101 +248,101 @@ Le but dans cette partie est de mettre en place un système d'alerte sous forme 
 #include <Adafruit_NeoPixel.h>
 #include <HTTPClient.h>**
 
-// =============== *Wi‑Fi* =================
-*const char* ssid = "LoraChoco";*
-*const char* wifi_password = "MRB3HBM0R28";*
+// =============== **Wi‑Fi** =================
+**const char* ssid = "LoraChoco";
+const char* wifi_password = "MRB3HBM0R28";**
 
-// ============ *Discord Webhook* ==========
-*const String discordWebhookURL = "https://discord.com/api/webhooks/1465362305037635627/wcEMF5cdgRcZsHh7R6dzSuEz36TtDO8bEFhv-JeMaPphLwyiybSGctcysL0ipXQcdGbd";*
+// ============ **Discord Webhook** ==========
+**const String discordWebhookURL = "https://discord.com/api/webhooks/1465362305037635627/wcEMF5cdgRcZsHh7R6dzSuEz36TtDO8bEFhv-JeMaPphLwyiybSGctcysL0ipXQcdGbd";**
 
-// ============= *NeoPixel* ================
-#*define NEOPIXEL_PIN   0*
-#*define NEOPIXEL_POWER 2*
-#*define NUMPIXELS      1*
-*Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);*
+// ============= **NeoPixel** ================
+#**define NEOPIXEL_PIN   0
+#define NEOPIXEL_POWER 2
+#define NUMPIXELS      1
+Adafruit_NeoPixel pixels(NUMPIXELS, NEOPIXEL_PIN, NEO_GRB + NEO_KHZ800);**
 
-// ============= *Seuils et timers* ========
-*const float TEMP_ALERT = 14.0;*
-*const unsigned long READ_INTERVAL = 10000; // 10 secondes*
+// ============= **Seuils et timers** ========
+**const float TEMP_ALERT = 14.0;
+const unsigned long READ_INTERVAL = 10000; // 10 secondes**
 
-*unsigned long lastTime = 0;*
-*bool alertSent = false;*
+**unsigned long lastTime = 0;
+bool alertSent = false;**
 
-// ============ *Fonctions* ==============
+// ============ **Fonctions** ==============
 
-*void sendDiscordAlert(float temp)* {
-  *if (WiFi.status() == WL_CONNECTED)* {
-    *HTTPClient http;*
-    *http.begin(discordWebhookURL);*
-    *http.addHeader("Content-Type", "application/json");*
+**void sendDiscordAlert(float temp) {
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    http.begin(discordWebhookURL);
+    http.addHeader("Content-Type", "application/json");**
 
-    // *JSON payload pour Discord*
-    *String payload = "{\"content\": \"⚠️ **ALERTE TEMPERATURE !**\\nValeur : " + String(temp) + " °C\"}";*
+    // **JSON payload pour Discord**
+    **String payload = "{\"content\": \"⚠️ **ALERTE TEMPERATURE !**\\nValeur : " + String(temp) + " °C\"}";**
 
-    *int httpResponse = http.POST(payload);*
-    *Serial.print("Discord webhook réponse code : ");*
-    *Serial.println(httpResponse);*
+    **int httpResponse = http.POST(payload);
+    Serial.print("Discord webhook réponse code : ");
+    Serial.println(httpResponse);
 
-    *http.end();*
+    http.end();**
   }
 }
 
-// ============ *Setup* ================
-*void setup()* {
-  *Serial.begin(9600);*
+// ============ **Setup** ================
+**void setup() {
+  Serial.begin(9600);**
 
-  // *Alimentation NeoPixel
+  // **Alimentation NeoPixel
   pinMode(NEOPIXEL_POWER, OUTPUT);
-  digitalWrite(NEOPIXEL_POWER, HIGH);*
+  digitalWrite(NEOPIXEL_POWER, HIGH);**
 
-  *pixels.begin();*
-  *pixels.clear();*
-  *pixels.show();*
+  **pixels.begin();
+  pixels.clear();
+  pixels.show();**
 
-  // *Connexion Wi‑Fi
-  *WiFi.mode(WIFI_STA);
-  *WiFi.begin(ssid, wifi_password);*
-  *Serial.print("Connexion Wi‑Fi");*
-  *while (WiFi.status() != WL_CONNECTED)* {
-    *delay(500);*
-    *Serial.print(".");*
+  // **Connexion Wi‑Fi
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, wifi_password);
+  Serial.print("Connexion Wi‑Fi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");**
   }
-  *Serial.println("\nWi‑Fi connecté !");*
-  *Serial.print("Adresse IP : ");*
-  *Serial.println(WiFi.localIP());*
+  **Serial.println("\nWi‑Fi connecté !");
+  Serial.print("Adresse IP : ");
+  Serial.println(WiFi.localIP());**
 }
 
-// ============ *Loop* ================
-*void loop()* {
-  // *Timer de lecture*
-  *if (millis() - lastTime >= READ_INTERVAL)* {
-    *lastTime = millis();*
+// ============ **Loop** ================
+**void loop()** {
+  // **Timer de lecture
+  if (millis() - lastTime >= READ_INTERVAL) {
+    lastTime = millis();**
 
-    // *Lire température*
-    *int raw = analogRead(34);*
-    *float volts = raw * 3.3 / 4095.0;*
-    *float temperature = volts / 0.01;*
+    // **Lire température**
+    **int raw = analogRead(34);
+    float volts = raw * 3.3 / 4095.0;
+    float temperature = volts / 0.01;**
 
-    *Serial.print("Température : ");*
-    *Serial.println(temperature);*
+    **Serial.print("Température : ");
+    Serial.println(temperature);**
 
-    // *Gestion NeoPixel*
-    *if (temperature > TEMP_ALERT)* {
-      *pixels.setPixelColor(0, pixels.Color(255, 0, 0));* // *rouge*
-      *pixels.show();*
+    // **Gestion NeoPixel**
+    **if (temperature > TEMP_ALERT) {
+      pixels.setPixelColor(0, pixels.Color(255, 0, 0)); // **rouge**
+      pixels.show();**
 
-      // *Envoi Discord une seule fois par dépassement*
-      *if (!alertSent)* {
-        *sendDiscordAlert(temperature);*
-        *alertSent = true;*
-        *Serial.println("Alerte Discord envoyée !");*
+      // **Envoi Discord une seule fois par dépassement**
+      **if (!alertSent)** {
+        **sendDiscordAlert(temperature);
+        alertSent = true;
+        Serial.println("Alerte Discord envoyée !");**
       }
 
-    } *else* {
-      // *Réinitialiser*
-      *pixels.clear();*
-      *pixels.show();*
-      *alertSent = false;*
+    } **else** {
+      // **Réinitialiser
+      pixels.clear();
+      pixels.show();
+      alertSent = false;**
     }
   }
 }
