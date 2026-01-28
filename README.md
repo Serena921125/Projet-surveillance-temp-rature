@@ -22,6 +22,8 @@ MP3D
 
 ##### <ins>V. Alertes et Automatisation</ins>
 
+##### <ins>Conclusion</ins>
+
 
 
 ### <ins>Introduction :</ins>
@@ -360,7 +362,7 @@ Dès que la température dépasse 14°C, la LED s'allume en rouge, mais aussi, o
 
 ![Photo17](messagedalerte.jpg)
 
-
+### <ins>Conclusion</ins>
 
 ##### 
 
