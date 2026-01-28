@@ -4,7 +4,7 @@ Chevrier Séréna
 
 MP3D
 
-#  					'rgb(9,105,218)'<ins>Projet suivi température</ins>
+#  					<ins>Projet suivi température</ins>
 
 
 
@@ -67,27 +67,27 @@ L'objectif dans cette partie est d'acquérir les données de température du cap
 La première étape est d'acquérir les données de température du capteur LM35. Pour cela, nous exécutons le programme Arduino ci-dessous.
 
 
-
-#```include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi)
+```
+#include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi)
 #include <PubSubClient.h> // Connect and publish to the MQTT broker
 
 // WiFi
 const char\ ssid = "LoraChoco";                 // Your personal network SSID
-const char\ wifi\_password = "MRB3HBM0R28"; // Your personal network password```
+const char\ wifi\_password = "MRB3HBM0R28"; // Your personal network password
 
-// *MQTT*
-*const char\ mqtt\_server = "centreia.fr";*  // *IP of the MQTT broker*
-*const char\ temperature\_topic = "serena-mikail";*
-*const char\ mqtt\_username = "user\_iut";* // *MQTT username*
-*const char\ mqtt\_password = "IUT2026";* // *MQTT password*
-*const char\ clientID = "client\_cter\_esp32\_classroom";* // *MQTT client ID*
+// MQTT
+const char\ mqtt\_server = "centreia.fr"*  // IP of the MQTT broker
+const char\ temperature\_topic = "serena-mikail";
+const char\ mqtt\_username = "user\_iut"; // MQTT username
+const char\ mqtt\_password = "IUT2026"; // MQTT password
+const char\ clientID = "client\_cter\_esp32\_classroom"; // MQTT client ID
 
-// *Initialise the WiFi and MQTT Client objects*
-*WiFiClient wifiClient;*
-// *1883 is the listener port for the Broker*
-*PubSubClient client(mqtt\_server, 1883, wifiClient);*
+// Initialise the WiFi and MQTT Client objects
+WiFiClient wifiClient;
+// 1883 is the listener port for the Broker
+PubSubClient client(mqtt\_server, 1883, wifiClient);
 
-
+```
 
 // *Custom function to connet to the MQTT broker via WiFi*
 *void connect\_MQTT(){*
