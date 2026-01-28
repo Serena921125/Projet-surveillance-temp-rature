@@ -68,12 +68,12 @@ La première étape est d'acquérir les données de température du capteur LM35
 
 
 
-#*include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi)*
-#*include <PubSubClient.h> // Connect and publish to the MQTT broker*
+#```include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi)
+#include <PubSubClient.h> // Connect and publish to the MQTT broker
 
-// *WiFi*
-*const char\ ssid = "LoraChoco";*                 // *Your personal network SSID*
-*const char\ wifi\_password = "MRB3HBM0R28";* // *Your personal network password*
+// WiFi
+const char\ ssid = "LoraChoco";                 // Your personal network SSID
+const char\ wifi\_password = "MRB3HBM0R28"; // Your personal network password```
 
 // *MQTT*
 *const char\ mqtt\_server = "centreia.fr";*  // *IP of the MQTT broker*
