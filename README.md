@@ -244,9 +244,9 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 
 Le but dans cette partie est de mettre en place un système d'alerte sous forme de message et de LED lorsque la température dépasse un seuil que nous allons définir. Nous faisons le choix d'envoyer des messages d'alerte dans un serveur discord et de fixer le seuil de température à 14°C. Pour cela, nous rédigeons un programme Arduino qui permet d'effectuer ce qui est demandé :
 
-#*include <WiFi.h>*
-#*include <Adafruit_NeoPixel.h>*
-#*include <HTTPClient.h>*
+#**include <WiFi.h>
+#include <Adafruit_NeoPixel.h>
+#include <HTTPClient.h>**
 
 // =============== *Wi‑Fi* =================
 *const char* ssid = "LoraChoco";*
@@ -292,8 +292,8 @@ Le but dans cette partie est de mettre en place un système d'alerte sous forme 
   *Serial.begin(9600);*
 
   // *Alimentation NeoPixel
-  /pinMode(NEOPIXEL_POWER, OUTPUT);
-  /digitalWrite(NEOPIXEL_POWER, HIGH);*
+  pinMode(NEOPIXEL_POWER, OUTPUT);
+  digitalWrite(NEOPIXEL_POWER, HIGH);*
 
   *pixels.begin();*
   *pixels.clear();*
