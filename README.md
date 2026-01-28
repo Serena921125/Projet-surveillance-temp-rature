@@ -244,6 +244,8 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 
 #### V. Sécurisation et Fiabilité
 
+Dans cette partie, nous allons implémenter une authentification MQTT avec un nom d'utilisateur et un mot de passe, et configurer le chiffrement TLS/SSL pour protéger les communications. 
+
 
 ##### 
 
