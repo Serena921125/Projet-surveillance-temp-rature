@@ -352,5 +352,10 @@ void loop() {
 
 ```
 
+Grâce à ce programme, nous parvenons à faire allumer la LED en rouge de la carte ESP32 quand on fait chauffer le capteur LM35.
+
+![Photo16](LEDrouge.jpg)
+
+
 ##### 
 
