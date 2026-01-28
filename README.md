@@ -34,9 +34,11 @@ Dans ce projet, nous allons concevoir un système de surveillance de températur
 
 ### <ins>I. Installation du Raspberry-Pi et de l'ESP32</ins>
 
-Tout d'abord, nous avons procédé au montage du capteur de température LM35 et de la carte ESP32 sur une plaque de prototypage, tout en étant vigilants sur les branchements. Les documents ci-dessous montrent comment lier le capteur à la carte. Nous obtenons le montage ci-dessous :
+Tout d'abord, nous avons procédé au montage du capteur de température LM35 et de la carte ESP32 sur une plaque de prototypage, tout en étant vigilants sur les branchements. Les documents ci-dessous montrent comment lier le capteur à la carte.
 
+![Photo0](Liaisoncapteurcarte.png)
 
+Nous obtenons donc le montage ci-dessous :
 
 ![Photo](Montage%20LM35%20et%20ESP32.jpg)
 
@@ -363,6 +365,8 @@ Dès que la température dépasse 14°C, la LED s'allume en rouge, mais aussi, o
 ![Photo17](messagedalerte.jpg)
 
 ### <ins>Conclusion</ins>
+
+
 
 ##### 
 
