@@ -248,9 +248,9 @@ Le but dans cette partie est de mettre en place un système d'alerte sous forme 
 #include <Adafruit_NeoPixel.h>
 #include <HTTPClient.h>**
 
-// =============== **Wi‑Fi =================
-const char* ssid = "LoraChoco";
-const char* wifi_password = "MRB3HBM0R28";**
+// =============== **Wi‑Fi** =================
+**const char ssid = "LoraChoco";
+const char wifi_password = "MRB3HBM0R28";**
 
 // ============ **Discord Webhook** ==========
 **const String discordWebhookURL = "https://discord.com/api/webhooks/1465362305037635627/wcEMF5cdgRcZsHh7R6dzSuEz36TtDO8bEFhv-JeMaPphLwyiybSGctcysL0ipXQcdGbd";**
