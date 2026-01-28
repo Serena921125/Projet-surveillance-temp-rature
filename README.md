@@ -291,9 +291,9 @@ Le but dans cette partie est de mettre en place un système d'alerte sous forme 
 *void setup()* {
   *Serial.begin(9600);*
 
-  // *Alimentation NeoPixel*
-  *pinMode(NEOPIXEL_POWER, OUTPUT);*
-  *digitalWrite(NEOPIXEL_POWER, HIGH);*
+  // *Alimentation NeoPixel
+  pinMode(NEOPIXEL_POWER, OUTPUT);
+  digitalWrite(NEOPIXEL_POWER, HIGH);*
 
   *pixels.begin();*
   *pixels.clear();*
