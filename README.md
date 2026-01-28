@@ -70,7 +70,7 @@ La première étape est d'acquérir les données de température du capteur LM35
 
 
 
-\*\*\*#include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi)
+**\*\*\*#include <WiFi.h> // Enables the ESP32 to connect to the local network (via WiFi)
 #include <PubSubClient.h> // Connect and publish to the MQTT broker
 
 // WiFi
@@ -166,7 +166,7 @@ client.publish(temperature\_topic, temperature\_string.c\_str());
 
 client.disconnect();  // disconnect from the MQTT broker
 delay(1000*10);       // print new values every 10 seconds
-}*\*\*
+}*\*\* **
 
 
 
@@ -245,6 +245,11 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 #### V. Sécurisation et Fiabilité
 
 Dans cette partie, nous allons implémenter une authentification MQTT avec un nom d'utilisateur et un mot de passe, et configurer le chiffrement TLS/SSL pour protéger les communications. 
+
+
+#### VI. Alertes et automatisation
+
+Le but dans cette partie est de mettre en place un système d'alerte lorsque la température dépasse un seuil que nous allons définir. 
 
 
 ##### 
