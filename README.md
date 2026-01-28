@@ -20,9 +20,7 @@ MP3D
 
 ##### IV. Stockage et exploitation des données
 
-##### V. Sécurisation et fiabilité
-
-##### VI. Alertes et Automatisation
+##### V. Alertes et Automatisation
 
 
 
@@ -242,12 +240,7 @@ On revient sur le terminal du Raspberry pour visualiser la table "mesures2". Pou
 
 ![Photo15](tablemesures.jpg)
 
-#### V. Sécurisation et Fiabilité
-
-Dans cette partie, nous allons implémenter une authentification MQTT avec un nom d'utilisateur et un mot de passe, et configurer le chiffrement TLS/SSL pour protéger les communications. 
-
-
-#### VI. Alertes et automatisation
+#### V. Alertes et automatisation
 
 Le but dans cette partie est de mettre en place un système d'alerte lorsque la température dépasse un seuil que nous allons définir. 
 
