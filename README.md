@@ -368,5 +368,10 @@ Dès que la température dépasse 14°C, la LED s'allume en rouge, mais aussi, o
 
 Ce projet nous a permis d'exploiter les données de température du capteur LM35 au delà du logiciel Arduino. En effet, nous avons pu les transmettre sur un serveur MQTT nommé "centreia.fr" et les avoir sur le Raspberry-Pi. Nous avons aussi utilisé Node-Red sur le Raspberry-Pi pour afficher les données en temps réel et les réorganiser en une structure de base SQLite. Enfin, après cette étape, nous avons mis en place un système d'alerte sur un serveur discord quand la température dépasse 14°C.
 
+Vidéo de démonstration :
+
+![Video](demo.mp4)
+
+
 ##### 
 
