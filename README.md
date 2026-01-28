@@ -352,9 +352,14 @@ void loop() {
 
 ```
 
-Grâce à ce programme, nous parvenons à faire allumer la LED en rouge de la carte ESP32 quand on fait chauffer le capteur LM35.
+Grâce à ce programme, nous parvenons à faire allumer la LED en rouge de la carte ESP32 quand on fait chauffer le capteur LM35. On peut faire chauffer ce dernier avec nos doigts.
 
 ![Photo16](LEDrouge.jpg)
+
+Dès que la température dépasse 14°C, la LED s'allume en rouge, mais aussi, on reçoit un message d'alerte dans le serveur discord "notifications' prévu à cet effet avec la valeur de température relevée.
+
+![Photo17](messagedalerte.jpg)
+
 
 
 ##### 
